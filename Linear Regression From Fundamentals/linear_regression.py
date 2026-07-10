@@ -2,6 +2,10 @@ import numpy as np
 from metrics import *
 
 def fit(X,Y,stepsize,metric: str): 
+        if X.size == 0 or Y.size == 0:
+            raise ValueError("One of the provided matrices is empty.")
+        if (X.shape[0] != Y.size and X.shape[1] == 1) or (X.shape != Y.shape):
+            raise ValueError("The number of X rows does not match the number of Y elements.")
         A = X.copy()
         b = Y.copy()
         i = 0
@@ -27,10 +31,12 @@ def error_metric(metric):
         "MAE": MAE(),
         "RMSE": RMSE()
     }
+    if metric.upper() not in class_list:
+         raise ValueError("The metric input does not match any metric classes available.")
     return class_list[metric.upper()] 
 
 def predict(X, coeff, intercept):
-    return ((X.T*coeff) + intercept)
+    return (np.dot(X,coeff) + intercept)
      
 
 '''
