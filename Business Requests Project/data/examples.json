@@ -1,0 +1,74 @@
+[
+  {
+    "client": "Central Coast Dental",
+    "request": "Patients are missing appointments because reminder emails are inconsistent.",
+    "response": {
+      "category": "Communications",
+      "priority": "High",
+      "risk": "Medium",
+      "suggested_automation": "Create an automated appointment reminder workflow with delivery tracking and retry logic.",
+      "reasoning": "The issue affects patient communication and can be solved through reliable automated notifications.",
+      "needs_human_review": false
+    }
+  },
+  {
+    "client": "Aldi's",
+    "request": "Part-time employees are being given inconsistent hours because of manager favoritism. Some employees are not getting the hours they requested.",
+    "response": {
+      "category": "Operations",
+      "priority": "High",
+      "risk": "Unknown",
+      "suggested_automation": "Create an automated calendar system that matches requested hours per employee, or as close as possible using a standard loss minimization algorithm. Offer multiple configurations for hours.",
+      "reasoning": "This enables employees to have consistent hours close to their requested amount with little bias.",
+      "needs_human_review": false
+    }
+  },
+  {
+    "client": "Santa Maria Nurseries",
+    "request": "Local customers are paying in cash, which makes it difficult to track in accounting.",
+    "response": {
+      "category": "Finances",
+      "priority": "Low",
+      "risk": "Low",
+      "suggested_automation": "Form a database of local customer transactions, either by IT or through a merchant services company.",
+      "reasoning": "All cash transactions are placed in an easily accessible databse to track.",
+      "needs_human_review": true
+    }
+  },
+    {
+    "client": "Smith Law Group",
+    "request": "Attorneys receive hundreds of discovery documents and need a faster way to identify the important ones.",
+    "response": {
+      "category": "Documents",
+      "priority": "Medium",
+      "risk": "High",
+      "suggested_automation": "Summarize incoming documents, extract key entities, and prioritize them for attorney review.",
+      "reasoning": "AI can reduce review time, but legal decisions require human oversight.",
+      "needs_human_review": true
+    }
+  },
+    {
+    "client": "Regal Theatres",
+    "request": "Customers have made complaints about certain snack brands being unavailable.",
+    "response": {
+      "category": "Customer",
+      "priority": "Unknown",
+      "risk": "Unknown",
+      "suggested_automation": "None.",
+      "reasoning": "Not enough information is given on the subject to determine if AI automation is appropriate.",
+      "needs_human_review": true
+    }
+  },
+    {
+    "client": "Regal Theatres",
+    "request": "Customers have complained that certain snacks go out of stock frequently.",
+    "response": {
+      "category": "Data",
+      "priority": "Low",
+      "risk": "Low",
+      "suggested_automation": "Feed an AI agent supply and demand information to create a near-future projection of customer demand, which updates every supply cycle.",
+      "reasoning": "An agent can perform simple data analytics and determine trends that may be hard to decipher.",
+      "needs_human_review": false
+    }
+  }
+]

@@ -7,8 +7,13 @@ client = OpenAI(
 )
 
 def classify_ai(client: str, request:str): 
+    with open("data/reference_examples.json") as j:
+        examples = json.load(j)
+
     prompt = f"""
     You are helping classify workflow requests a variety of different company clients.
+
+    Here is an example list of correct outputs: {json.dumps(examples, indent=4)}
 
     Client: {client}
     Request: {request}
