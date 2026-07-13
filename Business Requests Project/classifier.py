@@ -3,7 +3,7 @@ import json
 from validator import output_schema
 
 client = OpenAI(
-  api_key="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"
+  api_key=""
 )
 
 def classify_ai(client: str, request:str): 
