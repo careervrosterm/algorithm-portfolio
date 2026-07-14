@@ -30,7 +30,6 @@ def validate(response):
         raise ValueError(f"Unexpected fields: {extra_keys}")
     for field, rule in output_schema.items():
         value = response[field]
-
         if not (isinstance(rule,set) or isinstance(rule,type)):
             raise TypeError(f"Given schema rule {rule} is neither a set or python type.")
         if isinstance(rule, set) and value not in rule:
@@ -40,7 +39,6 @@ def validate(response):
             raise TypeError(
                 f"Invalid type for {field}: expected {rule.__name__}, got {type(value).__name__}"
             )
-        
     if response["priority"] == "Unknown" and response["risk"] == "Unknown":
         response["needs_human_review"] = True
 

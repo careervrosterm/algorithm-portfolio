@@ -29,7 +29,7 @@ def main():
         
         try:
             response = classifier.classify_ai(client, request)
-            response = validator.validate(json.load(response))
+            response = validator.validate(response)
 
             response["client"] = client
             response["request"] = request

@@ -7,8 +7,10 @@ import os
 load_dotenv()
 API_KEY = os.environ.get('API_KEY')
 
+openai_client = OpenAI(api_key=API_KEY)
+
 def classify_ai(client: str, request:str):  
-    with open("data/examples.json") as j:
+    with open("Business Requests Project\\data\\examples.json") as j:
         examples = json.load(j)
 
     prompt = f"""
@@ -20,7 +22,7 @@ def classify_ai(client: str, request:str):
     Request: {request}
 
     Return a structured classification using the exact JSON structure: 
-    {json.dump(output_schema)}
+    {output_schema}
 
     Some additional rules:
     1. Do not produce fictional information.
@@ -28,7 +30,7 @@ def classify_ai(client: str, request:str):
     3. If there is not enough info posed to assess risk, use "Unknown".
     4. If not enough context is given to assess risk and priority, or if there is no actionable goal that can be processed, then needs_human_review = True.
     """
-    response = client.responses.parse(
+    response = openai_client.responses.create(
         model="gpt-4.1-mini",
         input=[
             {
@@ -43,4 +45,4 @@ def classify_ai(client: str, request:str):
         text=output_schema
     )
 
-    return response.output_parsed
+    return openai_client.output_parsed
