@@ -1,13 +1,14 @@
 from openai import OpenAI
 import json
 from validator import output_schema
+from dotenv import load_dotenv
+import os
 
-client = OpenAI(
-  api_key=""
-)
+load_dotenv()
+API_KEY = os.environ.get('API_KEY')
 
-def classify_ai(client: str, request:str): 
-    with open("data/reference_examples.json") as j:
+def classify_ai(client: str, request:str):  
+    with open("data/examples.json") as j:
         examples = json.load(j)
 
     prompt = f"""

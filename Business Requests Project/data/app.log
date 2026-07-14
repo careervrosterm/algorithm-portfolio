@@ -1,0 +1,61 @@
+INFO:root:Beginning process.
+INFO:root:Beginning process.
+INFO:root:Beginning process.
+INFO:root:Beginning process.
+INFO:root:CSV loaded. Sending requests to OpenAI.
+INFO:root:Beginning process.
+INFO:root:CSV loaded. Sending requests to OpenAI.
+INFO:root:Beginning process.
+INFO:root:CSV loaded. Sending requests to OpenAI.
+INFO:root:Beginning process.
+INFO:root:CSV loaded. Sending requests to OpenAI.
+INFO:root:Beginning process.
+INFO:root:CSV loaded. Sending requests to OpenAI.
+INFO:root:Beginning process.
+INFO:root:CSV loaded. Sending requests to OpenAI.
+INFO:root:Beginning process.
+INFO:root:CSV loaded. Sending requests to OpenAI.
+INFO:root:Beginning process.
+INFO:root:CSV loaded. Sending requests to OpenAI.
+INFO:root:Beginning process.
+INFO:root:CSV loaded. Sending requests to OpenAI.
+INFO:root:Beginning process.
+INFO:root:CSV loaded. Sending requests to OpenAI.
+INFO:root:Beginning process.
+INFO:root:CSV loaded. Sending requests to OpenAI.
+INFO:root:Beginning process.
+INFO:root:CSV loaded. Sending requests to OpenAI.
+INFO:root:Beginning process.
+INFO:root:CSV loaded. Sending requests to OpenAI.
+INFO:root:Beginning process.
+INFO:root:CSV loaded. Sending requests to OpenAI.
+INFO:root:Beginning process.
+INFO:root:CSV loaded. Sending requests to OpenAI.
+INFO:root:Beginning process.
+INFO:root:CSV loaded. Sending requests to OpenAI.
+INFO:root:Beginning process.
+INFO:root:CSV loaded. Sending requests to OpenAI.
+INFO:root:Beginning process.
+INFO:root:CSV loaded. Sending requests to OpenAI.
+INFO:root:Beginning process.
+INFO:root:CSV loaded. Sending requests to OpenAI.
+INFO:root:Beginning process.
+INFO:root:CSV loaded. Sending requests to OpenAI.
+INFO:root:Beginning process.
+INFO:root:CSV loaded. Sending requests to OpenAI.
+ERROR:root:Failed to process request from Central Coast Dental: [Errno 2] No such file or directory: 'data/examples.json'
+ERROR:root:Failed to process request from Law Firm: [Errno 2] No such file or directory: 'data/examples.json'
+ERROR:root:Failed to process request from Bayside Hotel: [Errno 2] No such file or directory: 'data/examples.json'
+INFO:root:Finished sending requests to OpenAI. Now reading responses into CSV format.
+INFO:root:Beginning process.
+INFO:root:CSV loaded. Sending requests to OpenAI.
+ERROR:root:Failed to process request from Central Coast Dental: [Errno 2] No such file or directory: 'data/examples.json'
+ERROR:root:Failed to process request from Law Firm: [Errno 2] No such file or directory: 'data/examples.json'
+ERROR:root:Failed to process request from Bayside Hotel: [Errno 2] No such file or directory: 'data/examples.json'
+INFO:root:Finished sending requests to OpenAI. Now reading responses into CSV format.
+INFO:root:Beginning process.
+INFO:root:CSV loaded. Sending requests to OpenAI.
+ERROR:root:Failed to process request from Central Coast Dental: [Errno 2] No such file or directory: 'data/examples.json'
+ERROR:root:Failed to process request from Law Firm: [Errno 2] No such file or directory: 'data/examples.json'
+ERROR:root:Failed to process request from Bayside Hotel: [Errno 2] No such file or directory: 'data/examples.json'
+INFO:root:Finished sending requests to OpenAI. Now reading responses into CSV format.

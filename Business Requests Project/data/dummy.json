@@ -1,0 +1,8 @@
+{
+    "category": "Communications",
+    "priority": "High",
+    "risk": "Medium",
+    "suggested_automation": "Create an automated appointment reminder workflow with delivery tracking and retry logic.",
+    "reasoning": "The issue affects patient communication and can be solved through reliable automated notifications.",
+    "needs_human_review": false
+}

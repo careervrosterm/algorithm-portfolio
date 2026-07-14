@@ -31,7 +31,7 @@ def validate(response):
     for field, rule in output_schema.items():
         value = response[field]
 
-        if not (isinstance(rule,str) or isinstance(rule,type)):
+        if not (isinstance(rule,set) or isinstance(rule,type)):
             raise TypeError(f"Given schema rule {rule} is neither a set or python type.")
         if isinstance(rule, set) and value not in rule:
             raise ValueError(f"Invalid value for {field}: {value}")
