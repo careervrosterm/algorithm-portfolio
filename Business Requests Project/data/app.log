@@ -1,12 +1,51 @@
 INFO:root:Beginning process.
 INFO:root:CSV loaded. Sending requests to OpenAI.
-ERROR:root:Failed to process request from Central Coast Dental: 'str' object has no attribute 'responses'
-ERROR:root:Failed to process request from Law Firm: 'str' object has no attribute 'responses'
-ERROR:root:Failed to process request from Bayside Hotel: 'str' object has no attribute 'responses'
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 401 Unauthorized"
+ERROR:root:Failed to process request from Central Coast Dental: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************fgMA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 401 Unauthorized"
+ERROR:root:Failed to process request from Law Firm: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************fgMA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 401 Unauthorized"
+ERROR:root:Failed to process request from Bayside Hotel: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************fgMA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
 INFO:root:Finished sending requests to OpenAI. Now reading responses into CSV format.
 INFO:root:Beginning process.
 INFO:root:CSV loaded. Sending requests to OpenAI.
-ERROR:root:Failed to process request from Central Coast Dental: Object of type set is not JSON serializable
-ERROR:root:Failed to process request from Law Firm: Object of type set is not JSON serializable
-ERROR:root:Failed to process request from Bayside Hotel: Object of type set is not JSON serializable
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 401 Unauthorized"
+ERROR:root:Failed to process request from Central Coast Dental: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************fgMA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 401 Unauthorized"
+ERROR:root:Failed to process request from Law Firm: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************fgMA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 401 Unauthorized"
+ERROR:root:Failed to process request from Bayside Hotel: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************fgMA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+INFO:root:Finished sending requests to OpenAI. Now reading responses into CSV format.
+INFO:root:Beginning process.
+INFO:root:CSV loaded. Sending requests to OpenAI.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+ERROR:root:Failed to process request from Central Coast Dental: Error code: 400 - {'error': {'message': "Unknown parameter: 'text.category'.", 'type': 'invalid_request_error', 'param': 'text.category', 'code': 'unknown_parameter'}}
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+ERROR:root:Failed to process request from Law Firm: Error code: 400 - {'error': {'message': "Unknown parameter: 'text.category'.", 'type': 'invalid_request_error', 'param': 'text.category', 'code': 'unknown_parameter'}}
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+ERROR:root:Failed to process request from Bayside Hotel: Error code: 400 - {'error': {'message': "Unknown parameter: 'text.category'.", 'type': 'invalid_request_error', 'param': 'text.category', 'code': 'unknown_parameter'}}
+INFO:root:Finished sending requests to OpenAI. Now reading responses into CSV format.
+INFO:root:Beginning process.
+INFO:root:CSV loaded. Sending requests to OpenAI.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ERROR:root:Failed to process request from Central Coast Dental: 'OpenAI' object has no attribute 'output_parsed'
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ERROR:root:Failed to process request from Law Firm: 'OpenAI' object has no attribute 'output_parsed'
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ERROR:root:Failed to process request from Bayside Hotel: 'OpenAI' object has no attribute 'output_parsed'
+INFO:root:Finished sending requests to OpenAI. Now reading responses into CSV format.
+INFO:root:Beginning process.
+INFO:root:CSV loaded. Sending requests to OpenAI.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ERROR:root:Failed to process request from Central Coast Dental: 'OpenAI' object has no attribute 'output_text'
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ERROR:root:Failed to process request from Law Firm: 'OpenAI' object has no attribute 'output_text'
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ERROR:root:Failed to process request from Bayside Hotel: 'OpenAI' object has no attribute 'output_text'
+INFO:root:Finished sending requests to OpenAI. Now reading responses into CSV format.
+INFO:root:Beginning process.
+INFO:root:CSV loaded. Sending requests to OpenAI.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
 INFO:root:Finished sending requests to OpenAI. Now reading responses into CSV format.

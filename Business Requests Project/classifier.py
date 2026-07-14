@@ -1,6 +1,5 @@
 from openai import OpenAI
 import json
-from validator import output_schema
 from dotenv import load_dotenv
 import os
 
@@ -8,6 +7,15 @@ load_dotenv()
 API_KEY = os.environ.get('API_KEY')
 
 openai_client = OpenAI(api_key=API_KEY)
+
+prompt_schema = {
+    "category": ["Communications", "Operations", "Finances", "Tech Issues", "Customer", "Data", "Documents", "Other"],
+    "priority": ["Low", "Medium", "High", "Unknown"],
+    "risk": ["Low", "Medium", "High", "Unknown"],
+    "suggested_automation": "string",
+    "reasoning": "string",
+    "needs_human_review": "boolean"
+}
 
 def classify_ai(client: str, request:str):  
     with open("Business Requests Project\\data\\examples.json") as j:
@@ -22,7 +30,7 @@ def classify_ai(client: str, request:str):
     Request: {request}
 
     Return a structured classification using the exact JSON structure: 
-    {output_schema}
+    {json.dumps(prompt_schema)}
 
     Some additional rules:
     1. Do not produce fictional information.
@@ -41,8 +49,7 @@ def classify_ai(client: str, request:str):
                 "role": "user",
                 "content": prompt
             }
-        ],
-        text=output_schema
+        ]
     )
 
-    return openai_client.output_parsed
+    return response.output_text
